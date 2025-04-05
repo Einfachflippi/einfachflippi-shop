@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>einfachflippi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 0.5rem;
+    }
+    .social a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #4a90e2;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #357ABD;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>einfachflippi</h1>
+    <p>Willkommen auf meiner persönlichen Webseite</p>
+  </header>
+
+  <nav>
+    <a href="#ueber">Über mich</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#lebenslauf">Lebenslauf</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="ueber">
+    <h2>Über mich</h2>
+    <p>Hey! Ich bin einfachflippi – kreativ, technisch interessiert und immer auf der Suche nach neuen Projekten. Ob Webentwicklung, Design oder einfach nur gute Ideen – ich bin dabei!</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Hier sind einige Projekte, an denen ich gearbeitet habe:</p>
+    <ul>
+      <li>Projekt 1 – Webseite für einen lokalen Verein</li>
+      <li>Projekt 2 – Persönliches Blog mit CMS</li>
+      <li>Projekt 3 – Mini-Game in JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="lebenslauf">
+    <h2>Lebenslauf</h2>
+    <p><strong>Beruf:</strong> Webentwickler / Kreativarbeiter</p>
+    <p><strong>Erfahrung:</strong></p>
+    <ul>
+      <li>2023–heute: Freelancer</li>
+      <li>2021–2023: Praktikum & Nebenjobs im IT-Bereich</li>
+    </ul>
+    <p><strong>Kenntnisse:</strong> HTML, CSS, JavaScript, Python, Git, UI/UX</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form onsubmit="alert('Danke für deine Nachricht! (Dies ist nur ein Demo-Formular)'); return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+    <div class="social">
+      <p>Folge mir auf:</p>
+      <a href="#">Instagram</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 einfachflippi. Alle Rechte vorbehalten.</p>
+  </footer>
+
+</body>
+</html>
